@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# Trained models and generated artifacts (regenerate via train.py)
+models/*.keras
+models/*.json
+models/*.png
+
+# Dataset images (typically large / user-provided, not committed)
+dataset/train/*
+dataset/validation/*
+!dataset/train/.gitkeep
+!dataset/validation/.gitkeep
+
+# Runtime-generated logs and outputs
+logs/*.log
+logs/*.csv
+logs/*.txt
+screenshots/*.png
+
+.DS_Store
+Thumbs.db
